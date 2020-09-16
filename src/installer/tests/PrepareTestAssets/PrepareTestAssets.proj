@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <UsingTask TaskName="CopyNupkgAndChangeVersion" AssemblyFile="$(InstallerTasksAssemblyPath)" />
+  <UsingTask TaskName="CopyNupkgAndChangeVersion" AssemblyFile="$(DotNetBuildTasksSharedFrameworkTaskFile)" />
 
   <Target Name="PrepareTestAssets"
           DependsOnTargets="
